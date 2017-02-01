@@ -1,0 +1,132 @@
+html {
+  width:100%; 
+  height:100%; 
+  background: rgba(214,165,135,1);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(214,165,135,1) 0%, rgba(148,124,100,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(214,165,135,1)), color-stop(100%, rgba(148,124,100,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(214,165,135,1) 0%, rgba(148,124,100,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(214,165,135,1) 0%, rgba(148,124,100,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(214,165,135,1) 0%, rgba(148,124,100,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(214,165,135,1) 0%, rgba(148,124,100,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6a587', endColorstr='#947c64', GradientType=1 );
+}
+
+body {
+	margin: 0 auto;
+	margin-top: 300px;
+  text-align: center; /* !!! */
+}
+
+img {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	max-width: 100%;
+}
+
+#carta {
+	margin: 0 auto;
+	box-shadow: 10px 10px 10px;
+}
+
+.abrirTapa {
+	animation-name: abrirTapa;
+  animation-duration: 0.6s;
+}
+
+.sacarTarjeta {
+	animation-name: sacarTarjeta;
+  animation-duration: 1s;
+}
+
+img#tarjeta-img, img#transferencia-img, img#regalos-img, img#reverso, img#frente-inferior {
+	box-shadow: 10px 10px 5px 2px grey;
+}
+
+@keyframes abrirTapa {
+    0%  {-webkit-transform: rotateX(0deg); -moz-transform: rotateX(0deg); transform: rotateX(0deg);}
+    10%  {-webkit-transform: rotateX(9deg); -moz-transform: rotateX(9deg); transform: rotateX(9deg);}
+    20%  {-webkit-transform: rotateX(18deg); -moz-transform: rotateX(18deg); transform: rotateX(18deg);}
+    30% {-webkit-transform: rotateX(27deg); -moz-transform: rotateX(27deg); transform: rotateX(27deg);}
+    40% {-webkit-transform: rotateX(36deg); -moz-transform: rotateX(36deg); transform: rotateX(36deg);}
+    50% {-webkit-transform: rotateX(45deg); -moz-transform: rotateX(45deg); transform: rotateX(45deg);}
+    60% {-webkit-transform: rotateX(54deg); -moz-transform: rotateX(54deg); transform: rotateX(54deg);}
+    70% {-webkit-transform: rotateX(63deg); -moz-transform: rotateX(63deg); transform: rotateX(63deg);}
+    80% {-webkit-transform: rotateX(72deg); -moz-transform: rotateX(72deg); transform: rotateX(72deg);}
+    90% {-webkit-transform: rotateX(81deg); -moz-transform: rotateX(81deg); transform: rotateX(81deg);}
+    100% {-webkit-transform: rotateX(90deg); -moz-transform: rotateX(90deg); transform: rotateX(90deg);}
+}
+
+@keyframes sacarTarjeta {
+    0%  {top: 0px}
+    10%  {top: -10px}
+    20%  {top: -20px}
+    30% {top: -30px}
+    40% {top: -40px}
+    50% {top: -50px}
+    60% {top: -60px}
+    70% {top: -70px}
+    80% {top: -80px}
+    90% {top: -90px}
+    100% {top: -100px}
+}
+
+#fondo {
+	z-index: 0;
+}
+
+#reverso {
+	z-index: 3;
+}
+
+#frente-inferior {
+	z-index: 2;
+}
+
+#tapa {
+	z-index: 3;
+}
+
+#tarjetaf {
+	z-index: 1;
+
+}
+
+#tapa-abierta {
+	display: none;
+	top: -294px;
+}
+
+#tarjeta {
+	display: none;
+	position: relative;
+	z-index: 4;
+	margin-bottom: 10px;
+}
+
+#tarjeta-regalos {
+	display: none;
+	position: relative;
+	left: 680px;
+	top: -100px;
+	z-index: 3;
+}
+
+#tarjeta-transferencia {
+	display: none;
+	position: relative;
+	top: -130px;
+	left: 700px;
+	z-index: 3;
+}
+
+.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  user-drag: none; 
+}

@@ -1,0 +1,60 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="es"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="es"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="es"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
+	<head>
+		<title>Invitación</title>
+		<meta charset="utf-8">
+
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+		<link rel='stylesheet' href='/stylesheets/animate.css' />
+	</head>
+	<body>
+	<div id="carta"> 
+	  <div class="front"> 
+	    <img id="reverso" src="/images/reverso.jpg">
+	  </div> 
+	  <div class="back">
+			<img id="fondo" class="shadow" src="/images/fondo.jpg">
+			<img id="frente-inferior" src="/images/frente-inferior.png">
+			<div id="tarjetaf">
+				<img src="/images/tarjeta-1.png">
+			</div>
+			<div id="tapa">
+				<img id="tapa-cerrada" src="/images/tapa-cerrada.png">
+			</div>
+			<img id="tapa-abierta" src="/images/tapa-abierta.png">
+	  </div> 
+	</div>
+	<div id="tarjeta">
+		<div class="rotate-regalos">
+			<div id="tarjeta-regalos">
+				<img id="regalos-img" src="/images/listaregalos.png" border="0" width="329" height="308" orgWidth="329" orgHeight="308" usemap="#mapa-regalos" alt="" />
+				<map name="mapa-regalos" id="mapa-regalos">
+					<area alt="Lista de regalos" title="Lista de regalos" href="http://www.listadebodas.com.ar" shape="rect" coords="9,177,327,212" style="outline:none;" target="_blank"/>
+				</map>
+			</div>
+		</div>
+		<div class="rotate-transferencia"
+			<div id="tarjeta-transferencia">
+				<img id="transferencia-img" src="/images/transferencia.png">
+			</div>
+		</div>
+		<img id="tarjeta-img" src="/images/tarjeta-1.png" border="0" width="830" height="382" orgWidth="830" orgHeight="382" usemap="#tarjeta-mapa" alt="" />
+		<map name="tarjeta-mapa" id="tarjeta-mapa">
+		<area id="link-regalos" alt="Lista de Regalos" title="Lista de Regalos" href="#" shape="rect" coords="658,101,806,132" style="outline:none;" target="_self"     />
+		<area id="link-transferencia" alt="Transferencia" title="Transferencia" href="#" shape="rect" coords="658,135,806,166" style="outline:none;" target="_self"     />
+		<area alt="Confirmar asistencia" title="Confirmar asistencia" href="mailto:parejaCasamiento@servicio.com?Subject=Confirmo%20mi%20asistencia" shape="rect" coords="114,350,603,381" style="outline:none;" target="_self" />
+		</map>
+	</div>
+		<script
+		  src="https://code.jquery.com/jquery-2.2.4.min.js"
+		  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		  crossorigin="anonymous">
+		</script>
+		<script src="javascripts/jQueryRotate.js"></script>
+		<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script> 
+		<script src="javascripts/main.js"></script>
+	</body>
+</html>
